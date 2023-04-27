@@ -16,7 +16,7 @@ void selection_sort(int *array, size_t size)
 	if (array == NULL || size <= 1)
 		return;
 
-	temp = (int*)malloc(sizeof(int) * size);
+	temp = (int *)malloc(sizeof(int) * size);
 
 	if (temp == NULL)
 		return;
