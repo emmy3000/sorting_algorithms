@@ -3,7 +3,7 @@
 
 /**
  * bubble_sort - program sorts an array of integers in ascending order
- * using Bubble sort algorithm.
+ * using the Bubble sort algorithm.
  *
  * @array: array to be printed after implementating a swap operation.
  * @size: size of the array parameter been sorted.
