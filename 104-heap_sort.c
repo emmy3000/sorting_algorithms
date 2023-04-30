@@ -31,10 +31,10 @@ void heapify_down(int *array, size_t size, size_t root)
 	size_t largest = root;
 	size_t left = 2 * root + 1;
 	size_t right = 2 * root + 2;
-	
+
 	if (left < size && array[left] > array[largest])
 		largest = left;
-	
+
 	if (right < size && array[right] > array[largest])
 		largest = right;
 
@@ -50,7 +50,7 @@ void heapify_down(int *array, size_t size, size_t root)
 /**
  * heap_sort - Sort an array of integers in ascending order
  * using the heap sort algorithm.
- * 
+ *
  * @array: Poniters to an array of integers.
  * @size: Size of the array.
  *
@@ -59,7 +59,7 @@ void heap_sort(int *array, size_t size)
 {
 	int i;
 	int temp;
-	
+
 	for (i = (int)size / 2 - 1; i >= 0; i--)
 		heapify_down(array, size, i);
 
